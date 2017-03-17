@@ -25,6 +25,7 @@ Doctor.prototype.getDoctor = function(medicalIssue, displayDoctor) {
     if(website === undefined) {
       website = "";
     }
+
     displayDoctor(
       response.data[0].profile.image_url,
       response.data[0].profile.first_name,
@@ -36,7 +37,7 @@ Doctor.prototype.getDoctor = function(medicalIssue, displayDoctor) {
       response.data[0].practices[0].visit_address.zip,
       response.data[0].practices[0].phones[0].number,
       website);
-      console.log(rating);
+      console.log(response.data[0].practices[0].website);
    })
   .fail(function(error){
      console.log("fail");
