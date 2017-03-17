@@ -1,11 +1,11 @@
 $lightblue : #cde7f0;
 $important : 'Crete Round', serif;
-
-
+$small-break : 767px;
 
 
 .profile {
   margin-top: 20px;
+  padding-top: 40px;
 }
 
 h2 {
@@ -28,4 +28,14 @@ h2 {
 
 h7 {
   display: block;
+}
+
+input {
+  min-width: 175px;
+}
+
+h2, form {
+  @media (min-width: $small-break){
+    margin-left: 8%;
+  }
 }
