@@ -7,6 +7,7 @@ var displayDoctor = function(image, first, last, rating, street, city, state, zi
 $(document).ready(function() {
   var currentDoctorObject = new Doctor();
   $('form').submit(function(event) {
+    $('.results').text("");
     event.preventDefault();
     var medicalIssue = $('#medical-issue').val();
     $('#medical-issue').val('');
