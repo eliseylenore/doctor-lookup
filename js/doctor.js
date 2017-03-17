@@ -16,7 +16,7 @@ Doctor.prototype.getDoctor = function(medicalIssue, displayDoctor) {
       response.data[0].practices[0].visit_address.zip,
       response.data[0].practices[0].phones[0].number,
       response.data[0].practices[0].website);
-      console.log(response.data[0].practices[0].website);
+      console.log(response.data[0].profile.image_url);
 
    })
   .fail(function(error){
