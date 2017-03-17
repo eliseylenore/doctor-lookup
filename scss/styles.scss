@@ -26,7 +26,7 @@ h2 {
   display: inline-block
 }
 
-h7 {
+h7, h8 {
   display: block;
 }
 
@@ -38,4 +38,8 @@ h2, form {
   @media (min-width: $small-break){
     margin-left: 8%;
   }
+}
+
+h3 {
+  margin-top: 0;
 }
