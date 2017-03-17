@@ -1,7 +1,7 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var displayDoctor = function(image, first, last, street, city, state, zip, phone, website) {
-  $('.results').append('<img src="' + image + '" alt="" />' + '<h3>' + first + " " + last + '</h3><h5>' + street + ', ' + city + ', ' + state + ' ' + zip + '</h5><h4>' + phone + '</h4><h4>' + website + '</h4>');
+var displayDoctor = function(image, first, last, rating, street, city, state, zip, phone, website) {
+  $('.results').append('<img class="img-circle" src="' + image + '" alt="' + first + " " + last + '" />' + '<h3>' + first + " " + last + '</h3><img src"' + rating + '"/><h5>' + street + ', ' + city + ', ' + state + ' ' + zip + '</h5><h4>' + phone + '</h4><h4><a href="' + website + '">' + website + '</a></h4>');
 };
 
 $(document).ready(function() {
