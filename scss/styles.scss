@@ -1,0 +1,24 @@
+$lightblue : #cde7f0;
+$important : 'Domine', serif;
+
+
+
+
+.col-xs-4 {
+  background: $lightblue;
+  height: 100vh;
+  padding-right: 15px;
+  padding-left: 15px;
+  @media (min-width: 768px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media (min-width: 1200px) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+h2 {
+  font-family: $important;
+}
