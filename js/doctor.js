@@ -12,7 +12,7 @@ Doctor.prototype.getDoctor = function(medicalIssue, displayDoctor) {
         if(response.data[0].ratings[0].image_url_small !== undefined) {
           rating = response.data[0].ratings[0].image_url_small;
         }
-        else {
+        else if (response.data[0].ratings[1] !== undefined){
           rating = response.data[0].ratings[1].image_url_small;
         }
       }
