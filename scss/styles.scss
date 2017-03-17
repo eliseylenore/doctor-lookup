@@ -1,38 +1,31 @@
 $lightblue : #cde7f0;
-$important : 'Domine', serif;
+$important : 'Crete Round', serif;
 
 
 
 
-.sidebar{
-  background: $lightblue;
-  height: 50vh;
-  padding-right: 70px;
-  padding-left: 70px;
-  @media (min-width: 768px) {
-    padding-right: 70px;
-    padding-left: 85px;
-    height: 100vh;
-  }
-  @media (min-width: 1200px) {
-    padding-right: 70px;
-    padding-left: 85px;
-  }
-  .results {
-    text-align: center;
-  }
+.profile {
+  margin-top: 20px;
 }
 
 h2 {
   font-family: $important;
+  font-size: 72px;
 }
 
 .img-circle {
-  margin-top: 20px;
   border-radius: 20px;
+  @media (min-width: 600px){
+    float: right;
+  }
+
 }
 
 .rating {
   max-height: 14px;
   display: inline-block
+}
+
+h7 {
+  display: block;
 }
