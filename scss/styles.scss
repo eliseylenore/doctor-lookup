@@ -4,21 +4,35 @@ $important : 'Domine', serif;
 
 
 
-.col-xs-4 {
+.sidebar{
   background: $lightblue;
-  height: 100vh;
-  padding-right: 15px;
-  padding-left: 15px;
+  height: 50vh;
+  padding-right: 70px;
+  padding-left: 70px;
   @media (min-width: 768px) {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 70px;
+    padding-left: 85px;
+    height: 100vh;
   }
   @media (min-width: 1200px) {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 70px;
+    padding-left: 85px;
+  }
+  .results {
+    text-align: center;
   }
 }
 
 h2 {
   font-family: $important;
+}
+
+.img-circle {
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.rating {
+  max-height: 14px;
+  display: inline-block
 }
